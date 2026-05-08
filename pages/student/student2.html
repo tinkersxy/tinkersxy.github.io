@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="light">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    王瑄 - NLP & LLM Lab
+  </title>
+
+  <script>
+
+    const savedTheme =
+      localStorage.getItem('theme')
+      || (
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+      );
+
+    document.documentElement.setAttribute(
+      'data-theme',
+      savedTheme
+    );
+
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="../../assets/css/style.css"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  >
+
+  <!-- Academic Style -->
+
+  <style>
+
+    .student-profile-wrapper {
+
+      max-width: 1080px;
+
+      margin: 0 auto;
+
+    }
+
+    .student-profile-card {
+
+      padding: 52px;
+
+    }
+
+    .student-header {
+
+      display: flex;
+
+      gap: 42px;
+
+      align-items: flex-start;
+
+      flex-wrap: wrap;
+
+    }
+
+    .student-avatar {
+
+      width: 170px;
+
+      height: 210px;
+
+      object-fit: cover;
+
+      border-radius: 14px;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+
+      flex-shrink: 0;
+
+    }
+
+    .student-info {
+
+      flex: 1;
+
+      min-width: 300px;
+
+    }
+
+    .student-name {
+
+      font-size: 2.2rem;
+
+      font-weight: 700;
+
+      margin-bottom: 10px;
+
+      letter-spacing: 0.5px;
+
+    }
+
+    .student-title {
+
+      color: var(--text-secondary);
+
+      font-size: 1rem;
+
+      margin-bottom: 26px;
+
+      letter-spacing: 0.4px;
+
+    }
+
+    .student-bio {
+
+      line-height: 1.95;
+
+      color: var(--text-secondary);
+
+      font-size: 1rem;
+
+    }
+
+    .student-section {
+
+      margin-top: 42px;
+
+    }
+
+    .student-section h3 {
+
+      font-size: 1.15rem;
+
+      margin-bottom: 18px;
+
+      position: relative;
+
+      padding-left: 14px;
+
+      font-weight: 700;
+
+    }
+
+    .student-section h3::before {
+
+      content: '';
+
+      position: absolute;
+
+      left: 0;
+
+      top: 5px;
+
+      width: 4px;
+
+      height: 18px;
+
+      border-radius: 999px;
+
+      background: var(--primary);
+
+    }
+
+    .student-section p,
+    .student-section li {
+
+      color: var(--text-secondary);
+
+      line-height: 1.95;
+
+      font-size: 1rem;
+
+    }
+
+    .student-section ul {
+
+      padding-left: 20px;
+
+    }
+
+    .research-tags {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 24px;
+
+    }
+
+    .research-tag {
+
+      padding: 8px 16px;
+
+      border-radius: 999px;
+
+      background: rgba(255,255,255,0.05);
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      font-size: 0.9rem;
+
+      transition: 0.2s;
+
+    }
+
+    .research-tag:hover {
+
+      transform: translateY(-2px);
+
+      background: rgba(255,255,255,0.08);
+
+    }
+
+    .student-links {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+      margin-top: 28px;
+
+    }
+
+    .student-link {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      padding: 12px 18px;
+
+      border-radius: 12px;
+
+      text-decoration: none;
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      background: rgba(255,255,255,0.03);
+
+      transition: 0.25s;
+
+    }
+
+    .student-link:hover {
+
+      transform: translateY(-2px);
+
+      background: rgba(255,255,255,0.06);
+
+    }
+
+    .student-link i {
+
+      color: var(--primary);
+
+    }
+
+    .publication-item {
+
+      padding: 18px 22px;
+
+      border-radius: 14px;
+
+      background: rgba(255,255,255,0.03);
+
+      border: 1px solid rgba(255,255,255,0.06);
+
+      margin-bottom: 16px;
+
+    }
+
+    .publication-title {
+
+      font-weight: 600;
+
+      margin-bottom: 10px;
+
+      line-height: 1.7;
+
+    }
+
+    .publication-meta {
+
+      color: var(--text-secondary);
+
+      font-size: 0.95rem;
+
+    }
+
+    @media (max-width: 768px) {
+
+      .student-header {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+      }
+
+      .student-info {
+
+        width: 100%;
+
+      }
+
+      .research-tags,
+      .student-links {
+
+        justify-content: center;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ========================= -->
+  <!-- NAVIGATION -->
+  <!-- ========================= -->
+
+  <nav>
+
+    <div class="container nav-container">
+
+      <a
+        href="../../index.html"
+        class="logo"
+      >
+
+        <span class="logo-text">
+
+          NLP & LLM Lab
+
+        </span>
+
+        <div class="logo-dot"></div>
+
+      </a>
+
+      <div class="nav-actions">
+
+        <div class="nav-links">
+
+          <a href="../../index.html">
+            Home
+          </a>
+
+          <a href="../../index.html#projects">
+            Students
+          </a>
+
+          <a href="../../index.html#opensource">
+            Publications
+          </a>
+
+          <a href="../../index.html#skills">
+            Research
+          </a>
+
+        </div>
+
+        <div class="nav-controls">
+
+          <button
+            class="control-btn theme-toggle"
+            aria-label="Toggle Theme"
+          >
+
+            <i class="fas fa-sun sun-icon"></i>
+
+            <i class="fas fa-moon moon-icon"></i>
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- ========================= -->
+  <!-- PROFILE -->
+  <!-- ========================= -->
+
+  <section class="section-padding">
+
+    <div class="container student-profile-wrapper">
+
+      <div class="card student-profile-card">
+
+        <!-- Header -->
+
+        <div class="student-header">
+
+          <!-- Avatar -->
+
+          <img
+            src="../../assets/images/student2.jpg"
+            alt="王瑄"
+            class="student-avatar"
+          >
+
+          <!-- Info -->
+
+          <div class="student-info">
+
+            <h1 class="student-name">
+
+              王瑄
+
+            </h1>
+
+            <div class="student-title">
+
+              硕士研究生 · NLP & LLM Lab
+
+            </div>
+
+            <div class="student-bio">
+
+              目前主要从事
+              大语言模型微调与应用、
+              多模态大模型融合与对齐等方向研究。
+              研究兴趣涵盖
+              Large Language Models、
+              Vision-Language Models、
+              Medical AI 以及多模态语义理解等领域，
+              重点关注复杂场景下的大模型跨模态表示学习与生成能力。
+
+            </div>
+
+            <!-- Tags -->
+
+            <div class="research-tags">
+
+              <span class="research-tag">
+                Large Language Models
+              </span>
+
+              <span class="research-tag">
+                Multimodal Alignment
+              </span>
+
+              <span class="research-tag">
+                Vision-Language Models
+              </span>
+
+              <span class="research-tag">
+                Medical AI
+              </span>
+
+              <span class="research-tag">
+                Representation Learning
+              </span>
+
+            </div>
+
+            <!-- Links -->
+
+            <div class="student-links">
+
+              <a
+                href="https://github.com/"
+                target="_blank"
+                class="student-link"
+              >
+
+                <i class="fab fa-github"></i>
+
+                GitHub
+
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                class="student-link"
+              >
+
+                <i class="fas fa-graduation-cap"></i>
+
+                Google Scholar
+
+              </a>
+
+              <a
+                href="mailto:example@email.com"
+                class="student-link"
+              >
+
+                <i class="fas fa-envelope"></i>
+
+                Email
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Research Interests -->
+
+        <div class="student-section">
+
+          <h3>
+
+            Research Interests
+
+          </h3>
+
+          <ul>
+
+            <li>
+              大语言模型微调与应用（LLM Fine-tuning & Applications）
+            </li>
+
+            <li>
+              多模态大模型融合与对齐（Multimodal Foundation Models）
+            </li>
+
+            <li>
+              跨模态表示学习（Cross-modal Representation Learning）
+            </li>
+
+            <li>
+              医疗视觉语言模型（Medical Vision-Language Models）
+            </li>
+
+          </ul>
+
+        </div>
+
+
+
+        <!-- Academic Overview -->
+
+        <div class="student-section">
+
+          <h3>
+
+            Academic Overview
+
+          </h3>
+
+          <p>
+
+            当前研究工作聚焦于提升大模型在复杂多模态场景中的语义建模能力，
+            通过结合视觉、文本与结构化信息，
+            探索统一的大模型融合框架与高质量跨模态对齐方法，
+            进一步增强模型在生成、推理与知识理解任务中的泛化性能。
+
+          </p>
+
+        </div>
+
+
+
+        <!-- Publications -->
+
+        <div class="student-section">
+
+          <h3>
+
+            Selected Publications
+
+          </h3>
+
+          <div class="publication-item">
+
+            <div class="publication-title">
+
+              Enhancing Discriminative Ability in Multimodal LLMs:
+              A Contrastive Learning Approach for CT Report Generation
+
+            </div>
+
+            <div class="publication-meta">
+
+              Information Fusion, 2025
+
+            </div>
+
+          </div>
+
+          <div class="publication-item">
+
+            <div class="publication-title">
+
+              ClearView:
+              A Quality-aware Cross-modal Alignment Framework
+              for CT Report Generation
+
+            </div>
+
+            <div class="publication-meta">
+
+              ICMR 2025
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+
+  <footer>
+
+    © 2026 NLP & LLM Lab.
+    All Rights Reserved.
+
+  </footer>
+
+
+
+  <!-- ========================= -->
+  <!-- JS -->
+  <!-- ========================= -->
+
+  <script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
