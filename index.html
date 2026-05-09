@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh" data-theme="light">
+<html lang="en" data-theme="light">
 
 <head>
 
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>BetaNLP Lab</title>
 
   <script>
-
     const savedTheme =
-      localStorage.getItem('theme')
+      localStorage.getItem("theme")
       || (
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light'
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light"
       );
 
     document.documentElement.setAttribute(
-      'data-theme',
+      "data-theme",
       savedTheme
     );
-
   </script>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <link rel="stylesheet"
-        href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
 </head>
 
@@ -58,18 +57,20 @@
         <div class="nav-links">
 
           <a href="#intro">Home</a>
-          <a href="#advisor">PI</a>
-          <a href="#projects">Students</a>
-          <a href="#opensource">Publications</a>
           <a href="#timeline">News</a>
-          <a href="#skills">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#group">Group</a>
+          <a href="#grants">Grants & Awards</a>
 
         </div>
 
         <div class="nav-controls">
 
-          <button class="control-btn theme-toggle"
-                  aria-label="Toggle Theme">
+          <button class="control-btn lang-toggle">
+            中文
+          </button>
+
+          <button class="control-btn theme-toggle">
 
             <i class="fas fa-sun sun-icon"></i>
             <i class="fas fa-moon moon-icon"></i>
@@ -88,38 +89,40 @@
   <!-- HERO -->
   <!-- ========================= -->
 
-  <section id="intro" class="intro">
+  <section id="intro" class="hero-banner">
 
-    <div class="bg-decoration"></div>
+    <img
+      src="assets/images/top.jpg"
+      class="hero-bg"
+      alt="top"
+    />
 
-    <div class="container flex-center column">
+    <div class="hero-overlay"></div>
 
-      <div class="avatar-container">
+    <div class="floating-keywords">
 
-        <img src="assets/images/Avatar.jpg"
-             alt="Lab Logo"
-             class="avatar">
+      <span>Large Language Models</span>
+      <span>Medical AI</span>
+      <span>Knowledge Graphs</span>
+      <span>Multimodal Learning</span>
+      <span>Causal Reasoning</span>
+      <span>AI Agents</span>
+      <span>Clinical NLP</span>
 
-        <div class="avatar-glow"></div>
 
-      </div>
+    </div>
 
-      <h1 class="gradient-text">
-        Laboratory for Natural Language Processing and Large Language Models
+    <div class="hero-content container">
+
+      <h1>
+        BetaNLP Lab
       </h1>
 
-      <p class="subtitle">
-
-        Research on Large Language Models,
-        NLP Systems,
-        Multimodal Intelligence,
-        Knowledge Graphs
-        and AI Reasoning.
-
+      <p>
+        Large Language Models · Medical AI ·
+        Knowledge Graphs · Multimodal Intelligence ·
+        Causal Reasoning
       </p>
-
-      <div class="intro-contact-links"
-           aria-label="Social Links"></div>
 
     </div>
 
@@ -133,137 +136,29 @@
 
     <div class="container">
 
-      <h2>Principal Investigator</h2>
+      <div class="section-header">
 
-      <div class="card pi-card">
-
-        <div class="project-info">
-
-          <h3>石戈（北京理工大学）</h3>
-
-          <div class="student-role">
-            博士｜副教授｜博士生导师
-          </div>
-
-          <p>
-            2020年毕业于北京理工大学计算机学院，
-            长期从事大模型预训练、
-            知识图谱、
-            多模态智能、
-            医疗人工智能等方向研究。
-          </p>
-
-          <p>
-            在 ACL、EMNLP、TKDE、
-            Information Fusion 等国际顶级期刊会议发表论文60余篇，
-            主持或参与多项国家重点研发计划、
-            国家自然科学基金项目。
-          </p>
-
-          <div class="project-tags">
-
-            <span class="project-tag">Large Language Models</span>
-            <span class="project-tag">NLP Systems</span>
-            <span class="project-tag">Knowledge Graph</span>
-            <span class="project-tag">Multimodal Learning</span>
-
-          </div>
-
-        </div>
+        <h2>
+          Principal Investigator
+        </h2>
 
       </div>
 
-    </div>
+      <div class="pi-wrapper">
 
-  </section>
+        <div class="pi-left">
 
-  <!-- ========================= -->
-  <!-- STUDENTS -->
-  <!-- ========================= -->
-
-  <section id="projects" class="section-padding">
-
-    <div class="container">
-
-      <h2>Students</h2>
-
-      <div class="projects-grid">
-
-        <!-- Student 1 -->
-        <div class="card">
-
-          <img src="assets/images/student1.jpg" alt="Student 1">
-
-          <div class="project-info">
-
-            <h3>Student 1</h3>
-
-            <p>
-              研究方向：大语言模型微调与应用、
-              多模态大模型融合与对齐。
-            </p>
-
-          </div>
+          <img
+            src="assets/images/Avatar.jpg"
+            alt="Ge Shi"
+            class="pi-avatar"
+          />
 
         </div>
 
-        <!-- Student 2 -->
-        <div class="card">
-
-          <img src="assets/images/student2.jpg" alt="Student 2">
-
-          <div class="project-info">
-
-            <h3>Student 2</h3>
-
-            <p>
-              研究方向：NLP、
-              多模态文档问答、
-              领域数据集构建、
-              大模型微调训练、
-              无训练轻量化推理。
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- Student 3 -->
-        <div class="card">
-
-          <img src="assets/images/student3.jpg" alt="Student 3">
-
-          <div class="project-info">
-
-            <h3>Student 3</h3>
-
-            <p>
-              研究方向：医学多模态大模型、
-              因果推理、
-              医疗智能体系统。
-            </p>
-
-          </div>
-
-        </div>
+        <div class="pi-right"></div>
 
       </div>
-
-    </div>
-
-  </section>
-
-  <!-- ========================= -->
-  <!-- PUBLICATIONS -->
-  <!-- ========================= -->
-
-  <section id="opensource" class="section-padding">
-
-    <div class="container">
-
-      <h2>Selected Publications</h2>
-
-      <div class="opensource-grid"></div>
 
     </div>
 
@@ -277,7 +172,11 @@
 
     <div class="container">
 
-      <h2>News & Timeline</h2>
+      <div class="section-header">
+
+        <h2>News</h2>
+
+      </div>
 
       <div class="timeline-container"></div>
 
@@ -286,16 +185,71 @@
   </section>
 
   <!-- ========================= -->
-  <!-- RESEARCH -->
+  <!-- PUBLICATIONS -->
   <!-- ========================= -->
 
-  <section id="skills" class="section-padding">
+  <section id="publications" class="section-padding">
 
     <div class="container">
 
-      <h2>Research Areas</h2>
+      <div class="section-header">
 
-      <div class="skills-wrapper"></div>
+        <h2>Selected Publications</h2>
+
+      </div>
+
+      <div class="publication-list"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- GROUP -->
+  <!-- ========================= -->
+
+  <section id="group" class="section-padding">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>Group Members</h2>
+
+      </div>
+
+      <div id="group-container"></div>
+
+    </div>
+
+  </section>
+
+  <!-- ========================= -->
+  <!-- GRANTS -->
+  <!-- ========================= -->
+
+  <section id="grants" class="section-padding">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <h2>Grants & Awards</h2>
+
+      </div>
+
+      <div class="academic-block">
+
+        <h3>Research Grants</h3>
+        <ul class="academic-list" id="grant-list"></ul>
+
+        <h3>Awards</h3>
+        <ul class="academic-list" id="award-list"></ul>
+
+        <h3>Professional Services</h3>
+        <ul class="academic-list" id="service-list"></ul>
+
+      </div>
 
     </div>
 
@@ -313,7 +267,7 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
 
 </body>
-
 </html>
