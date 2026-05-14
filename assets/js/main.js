@@ -167,6 +167,48 @@
 
     {
       authors:
+        'Yan Zhuang, Bo Wang, Chengliang Yin, Junyan Zhang, Fanqing Meng, Jianfei Zhao, Qingyong Su, Xuan Zhao, Xiuxing Li, Ping Hu, Shiyuan Liu, Rilige Wu, Yun Hua, Wei Dong, Bing Wei, Lei Zheng, João Conde, Ge Shi*, Chong Feng*, Kunlun He*',
+
+      title_en:
+        'Clinical Large Language Model Centered on Electronic Medical Records',
+
+      title_zh:
+        '面向电子病历的临床大语言模型',
+
+      venue:
+        'npj Digital Medicine, 2026 (Nature Portfolio)',
+    },
+
+    {
+      authors:
+        'Mengxiao Zhu, Haixu Chen, Jiu Sha, Jie Liu, Ge Shi*',
+
+      title_en:
+        'Beyond Atomic Characters: Glyph-Aware Sub-character Alignment for Low-Resource Multilingual OCR',
+
+      title_zh:
+        '超越原子字符：面向低资源多语种 OCR 的字形感知子字符对齐方法',
+
+      venue:
+        'ACL 2026 Main (CCF A)',
+    },
+
+    {
+      authors:
+        'Changsen Yuan, Yanghao Zhou, Chong Feng, Ge Shi*',
+
+      title_en:
+        'Simulating Crisis Cognition: A Computational Framework for Hypothesis Generation in Crisis Communication',
+
+      title_zh:
+        '模拟危机认知：面向危机传播假设生成的计算框架',
+
+      venue:
+        'Findings of ACL 2026',
+    },
+
+    {
+      authors:
         'Tuo Wang, Meng Jian, Ge Shi*, Lifang Wu, Yashen Wang',
 
       title_en:
@@ -411,6 +453,22 @@
   const TIMELINE = [
 
     {
+      date: 'May 2026',
+
+      title_en:
+        'npj Digital Medicine Paper Accepted',
+
+      title_zh:
+        'npj Digital Medicine 论文录用',
+
+      desc_en:
+        'The paper "Clinical Large Language Model Centered on Electronic Medical Records" was accepted by npj Digital Medicine, a Nature Portfolio journal.',
+
+      desc_zh:
+        '论文“Clinical Large Language Model Centered on Electronic Medical Records”被 Nature 子刊 npj Digital Medicine 录用。',
+    },
+
+    {
       date: 'Apr 2026',
 
       title_en:
@@ -420,10 +478,10 @@
         '两篇论文被 ACL 2026 录用',
 
       desc_en:
-        'Two papers were accepted by ACL 2026: one on low-resource multilingual OCR in the main conference, and one on computational hypothesis generation for crisis communication in Findings of ACL.',
+        'Two papers were accepted by ACL 2026: "Beyond Atomic Characters" in the main conference, and "Simulating Crisis Cognition" in Findings of ACL.',
 
       desc_zh:
-        '两篇论文被 ACL 2026 录用：一篇关于低资源多语种 OCR 的工作入选 ACL 主会，一篇关于危机传播中假设生成计算框架的工作入选 ACL Findings。',
+        '两篇论文被 ACL 2026 录用：“Beyond Atomic Characters”入选 ACL 主会，“Simulating Crisis Cognition”入选 ACL Findings。',
     },
 
     {
