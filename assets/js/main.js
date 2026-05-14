@@ -712,25 +712,29 @@
 
     en: [
 
-      'National Natural Science Foundation of China Youth Project.',
+      'National Natural Science Foundation of China Youth Project: Unified Knowledge Extraction Based on Multi-adapter Decoupling and Fusion, Principal Investigator.',
 
-      'Beijing Natural Science Foundation Joint Project.',
+      'XXXXXX Pre-research Project: XXXXXX Emotion Recognition, Task Principal Investigator.',
 
-      'Medical Large Language Model Data Construction Project.',
+      'Beijing Natural Science Foundation - Haidian Original Innovation Joint Fund: Precision Diagnosis and Treatment Model for Rheumatoid Arthritis Based on Large-scale Language Models and Personalized Multi-omics Data, Task Principal Investigator.',
 
-      'Knowledge-driven Multimodal Semantic Understanding Project.',
+      'XXXXXX Pre-research Project: Construction and Application of XXXXXX Reasoning Large Models, Task Principal Investigator.',
+
+      'National Natural Science Foundation of China Key Project: Knowledge-driven Theories and Methods for Multimodal Semantic Understanding in Complex Scenarios, Core Research Member.',
 
     ],
 
     zh: [
 
-      '国家自然科学基金青年基金项目。',
+      '国家自然科学基金青年基金项目：基于多适配器解耦、融合的统一知识抽取方法研究，项目负责人。',
 
-      '北京市自然科学基金联合基金项目。',
+      'XXXXXX 预先研究项目：XXXXXX 情绪识别，课题负责人。',
 
-      '医疗领域大模型数据构建项目。',
+      '北京市自然科学基金-海淀原始创新联合基金：基于大规模语言模型和个性化多组学数据的类风湿性关节炎精准诊疗模型研究，课题负责人。',
 
-      '知识驱动复杂场景多模态语义理解项目。',
+      'XXXXXX 预先研究项目：XXXXXX 推理大模型构建与应用，课题负责人。',
+
+      '国家自然科学基金重点项目：知识驱动的复杂场景多模态语义理解理论与方法，核心骨干。',
 
     ]
 
