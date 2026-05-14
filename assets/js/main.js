@@ -507,7 +507,7 @@
 
       {
         name_en: 'Ruihan Yang',
-        name_zh: '杨瑞涵',
+        name_zh: '杨睿晗',
 
         role_en:
           'Visiting Student · Zhengzhou University',
@@ -568,6 +568,28 @@
 
         role_zh:
           '中国农业银行软件开发中心',
+      },
+
+      {
+        name_en: 'Yepeng Zhang',
+        name_zh: '张晔鹏',
+
+        role_en:
+          'Direct Ph.D. Program, Beijing Institute of Technology',
+
+        role_zh:
+          '直博至北京理工大学',
+      },
+
+      {
+        name_en: 'Tong Zhou',
+        name_zh: '周同',
+
+        role_en:
+          'M.S. Program, Virginia Tech',
+
+        role_zh:
+          '赴美国 Virginia Tech 攻读硕士',
       }
 
     ]
