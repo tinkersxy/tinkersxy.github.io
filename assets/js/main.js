@@ -24,11 +24,21 @@
       hero: {
         title: 'BetaNLP Lab',
         subtitle:
-          'Large Language Models · Medical AI · Knowledge Graphs · Multimodal Intelligence · Causal Reasoning',
+          'Trustworthy LLM Reasoning and Real-World Applications',
+        keywords: [
+          'Trustworthy LLMs',
+          'Medical AI',
+          'Multimodal Reasoning',
+          'Knowledge & Causality',
+          'Clinical NLP',
+          'AI Agents',
+          'Real-world Applications',
+        ],
       },
 
       section: {
         pi: 'Principal Investigator',
+        research: 'Research Vision',
         news: 'News',
         pubs: 'Selected Publications',
         group: 'Group Members',
@@ -62,11 +72,21 @@
       hero: {
         title: 'BetaNLP Lab',
         subtitle:
-          '大语言模型 · 医疗人工智能 · 知识图谱 · 多模态智能 · 因果推理',
+          '可信大模型推理与应用',
+        keywords: [
+          '可信大模型',
+          '医疗人工智能',
+          '多模态推理',
+          '知识与因果',
+          '临床自然语言处理',
+          '智能体应用',
+          '真实场景应用',
+        ],
       },
 
       section: {
         pi: '负责人',
+        research: '研究愿景',
         news: '新闻动态',
         pubs: '代表性论文',
         group: '实验室成员',
@@ -107,9 +127,10 @@
       desc: [
 
         `Dr. Ge Shi received his Ph.D. degree from the School of Computer Science,
-        Beijing Institute of Technology in 2020. His research mainly focuses on
-        Large Language Models, Knowledge Graphs, Multimodal Intelligence,
-        Medical AI.`,
+        Beijing Institute of Technology in 2020. His research focuses on
+        trustworthy LLM reasoning and real-world applications, with emphasis on
+        knowledge- and causality-enhanced intelligence, multimodal understanding,
+        and medical AI.`,
 
         `He has published more than 60 papers in top-tier conferences and journals,
         including ACL, EMNLP, TKDE, Information Fusion, ACM TOIS, and IEEE TCSVT.`,
@@ -138,8 +159,8 @@
         2020年毕业于北京理工大学计算机学院智能处理与内容安全工信部重点实验室，
         获得计算机科学与技术博士学位。`,
 
-        `主要从事大模型预训练、知识图谱、多模态智能、
-        医疗人工智能等方向研究工作。`,
+        `主要从事可信大模型推理与应用研究，重点关注知识与因果增强智能、
+        多模态理解、医疗人工智能等方向。`,
 
         `在 ACL、EMNLP、TKDE、Information Fusion、
         ACM TOIS、IEEE TCSVT 等国际顶级期刊会议发表论文60余篇。`,
@@ -325,6 +346,86 @@
     },
 
   ];
+
+  /*
+   * =========================================================
+   * RESEARCH VISION
+   * =========================================================
+   */
+
+  const RESEARCH_VISION = {
+
+    en: {
+
+      intro:
+        'BetaNLP Lab studies trustworthy LLM reasoning and its real-world applications. We aim to build AI systems that can reason reliably, align information across modalities, and support high-stakes decisions in domains such as healthcare, communication, and intelligent recommendation.',
+
+      areas: [
+
+        {
+          title:
+            'Trustworthy LLM Reasoning',
+
+          desc:
+            'Knowledge-enhanced, causality-aware, interpretable, and reliable reasoning methods for large language models.',
+        },
+
+        {
+          title:
+            'Medical and Multimodal Intelligence',
+
+          desc:
+            'Clinical language models, electronic medical records, medical report generation, multimodal alignment, and healthcare AI.',
+        },
+
+        {
+          title:
+            'Real-World AI Applications',
+
+          desc:
+            'LLM-powered recommendation, crisis communication analysis, low-resource OCR, and agentic systems for complex scenarios.',
+        },
+
+      ],
+
+    },
+
+    zh: {
+
+      intro:
+        'BetaNLP Lab 聚焦可信大模型推理与应用，面向医疗健康、传播计算、智能推荐等真实场景，研究可解释、可泛化、可靠的大模型推理方法与智能系统。',
+
+      areas: [
+
+        {
+          title:
+            '可信大模型推理',
+
+          desc:
+            '研究知识增强、因果感知、可解释与可靠的大语言模型推理方法，提升模型在复杂任务中的可信决策能力。',
+        },
+
+        {
+          title:
+            '医疗与多模态智能',
+
+          desc:
+            '面向电子病历、临床语言模型、医学报告生成与多模态对齐，构建服务医疗健康场景的智能技术。',
+        },
+
+        {
+          title:
+            '真实场景智能应用',
+
+          desc:
+            '探索大模型驱动的推荐系统、危机传播分析、低资源 OCR 与复杂场景智能体应用。',
+        },
+
+      ],
+
+    },
+
+  };
 
   /*
    * =========================================================
@@ -514,22 +615,6 @@
 
       desc_zh:
         '论文“MSR-Rec: Multi-Step Reasoning-Enhanced LLM for Sequential Recommendation”被 AAAI 2026 录用。',
-    },
-
-    {
-      date: 'Jan 2026',
-
-      title_en:
-        'Lab Website Released',
-
-      title_zh:
-        '实验室主页上线',
-
-      desc_en:
-        'Official release of the Causal Medical Intelligence Lab website.',
-
-      desc_zh:
-        '因果医疗智能实验室官方网站正式发布。',
     },
 
     {
@@ -774,6 +859,13 @@
     qs('.hero-content p').textContent =
       t.hero.subtitle;
 
+    document
+      .querySelectorAll('.floating-keywords span')
+      .forEach((span, index) => {
+        span.textContent =
+          t.hero.keywords[index] || '';
+      });
+
     /*
      * section titles
      */
@@ -782,10 +874,11 @@
       document.querySelectorAll('h2');
 
     titles[0].textContent = t.section.pi;
-    titles[1].textContent = t.section.news;
-    titles[2].textContent = t.section.pubs;
-    titles[3].textContent = t.section.group;
-    titles[4].textContent = t.section.grants;
+    titles[1].textContent = t.section.research;
+    titles[2].textContent = t.section.news;
+    titles[3].textContent = t.section.pubs;
+    titles[4].textContent = t.section.group;
+    titles[5].textContent = t.section.grants;
 
     /*
      * grants titles
@@ -843,28 +936,99 @@
       <div class="project-tags">
 
         <span class="project-tag">
-          Large Language Models
+          ${
+            currentLang === 'en'
+              ? 'Trustworthy LLMs'
+              : '可信大模型'
+          }
         </span>
 
         <span class="project-tag">
-          Medical AI
+          ${
+            currentLang === 'en'
+              ? 'LLM Reasoning'
+              : '大模型推理'
+          }
         </span>
 
         <span class="project-tag">
-          Knowledge Graphs
+          ${
+            currentLang === 'en'
+              ? 'Knowledge & Causality'
+              : '知识与因果'
+          }
         </span>
 
         <span class="project-tag">
-          Multimodal Intelligence
+          ${
+            currentLang === 'en'
+              ? 'Medical AI'
+              : '医疗人工智能'
+          }
         </span>
 
         <span class="project-tag">
-          Causal Reasoning
+          ${
+            currentLang === 'en'
+              ? 'Multimodal Intelligence'
+              : '多模态智能'
+          }
         </span>
 
       </div>
 
     `;
+
+  }
+
+  /*
+   * =========================================================
+   * RESEARCH VISION
+   * =========================================================
+   */
+
+  function initResearchVision() {
+
+    const data =
+      RESEARCH_VISION[currentLang];
+
+    const intro =
+      qs('.research-intro');
+
+    const grid =
+      qs('.research-grid');
+
+    if (!intro || !grid) return;
+
+    intro.innerHTML = `
+      <p>${data.intro}</p>
+    `;
+
+    clear(grid);
+
+    data.areas.forEach((area, index) => {
+
+      const item =
+        document.createElement('div');
+
+      item.className =
+        'research-card';
+
+      item.innerHTML = `
+
+        <div class="research-index">
+          0${index + 1}
+        </div>
+
+        <h3>${area.title}</h3>
+
+        <p>${area.desc}</p>
+
+      `;
+
+      grid.appendChild(item);
+
+    });
 
   }
 
@@ -1097,6 +1261,8 @@
     initStaticText();
 
     initPI();
+
+    initResearchVision();
 
     initPublications();
 
