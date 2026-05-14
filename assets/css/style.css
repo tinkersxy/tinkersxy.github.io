@@ -1076,13 +1076,27 @@ nav {
 .publication-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 0;
 }
 
 .pub-item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 12px;
   padding-bottom: 18px;
+  margin-bottom: 18px;
   border-bottom: 1px solid var(--border-light);
   line-height: 1.7;
+}
+
+.pub-index {
+  color: var(--primary);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-content {
+  min-width: 0;
 }
 
 .pub-title {
@@ -1090,9 +1104,42 @@ nav {
   color: var(--text-main);
 }
 
+.pub-title-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-title-link:hover {
+  color: var(--primary);
+}
+
+.pub-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
 .pub-venue {
   color: var(--primary);
   font-weight: 500;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 9px;
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.pub-link:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--bg-hover);
 }
 
 .pub-year {
@@ -1189,6 +1236,11 @@ nav {
 
   .research-intro {
     text-align: left;
+  }
+
+  .pub-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 
 }

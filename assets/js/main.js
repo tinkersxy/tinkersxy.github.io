@@ -240,6 +240,9 @@
 
       venue:
         'AAAI 2026 (CCF A)',
+
+      url:
+        'https://ojs.aaai.org/index.php/AAAI/article/view/38620',
     },
 
     {
@@ -254,6 +257,9 @@
 
       venue:
         'Information Fusion, 2026 (SCI Q1)',
+
+      url:
+        'https://www.sciencedirect.com/science/article/pii/S1566253525009431',
     },
 
     {
@@ -268,6 +274,9 @@
 
       venue:
         'Information Fusion, 2025 (SCI Q1)',
+
+      url:
+        'https://www.sciencedirect.com/science/article/pii/S1566253525003136',
     },
 
     {
@@ -283,6 +292,9 @@
       venue:
         'ACM TOIS, 2025 (CCF A)',
 
+      url:
+        'https://doi.org/10.1145/3729223',
+
     },
 
     {
@@ -290,13 +302,16 @@
         'Xinyu Zhang, Limei Hu*, Luhao Zhang, Wentao Cheng, Yashen Wang, Ge Shi*',
 
       title_en:
-        'Bi-Timing with Collaborative Information for Controllable LLM-based Sequential Recommendation',
+        'Bi-Tuning with Collaborative Information for Controllable LLM-based Sequential Recommendation',
 
       title_zh:
-        '面向可控序列推荐的协同双时间建模方法',
+        '面向可控大语言模型序列推荐的协同信息双向调优方法',
 
       venue:
         'ACL 2025 (CCF A)',
+
+      url:
+        'https://aclanthology.org/2025.acl-long.949/',
 
     },
 
@@ -313,6 +328,9 @@
       venue:
         'ICMR 2025 (CCF B)',
 
+      url:
+        'https://doi.org/10.1145/3731715.3733287',
+
     },
 
     {
@@ -328,6 +346,9 @@
       venue:
         'ACM TIST, 2024',
 
+      url:
+        'https://doi.org/10.1145/3655632',
+
     },
 
     {
@@ -342,6 +363,9 @@
 
       venue:
         'COLING 2024',
+
+      url:
+        'https://aclanthology.org/2025.coling-main.655/',
 
     },
 
@@ -1047,12 +1071,29 @@
 
     clear(container);
 
-    PUBLICATIONS.forEach(pub => {
+    PUBLICATIONS.forEach((pub, index) => {
 
       const title =
         currentLang === 'en'
           ? pub.title_en
           : pub.title_zh;
+
+      const titleText =
+        `"${title}."`;
+
+      const titleHtml =
+        pub.url
+          ? `<a class="pub-title-link" href="${pub.url}" target="_blank" rel="noopener noreferrer">${titleText}</a>`
+          : titleText;
+
+      const linkHtml =
+        pub.url
+          ? `<a class="pub-link" href="${pub.url}" target="_blank" rel="noopener noreferrer">${
+              currentLang === 'en'
+                ? 'Paper'
+                : '论文'
+            }</a>`
+          : '';
 
       const item =
         document.createElement('div');
@@ -1062,14 +1103,27 @@
 
       item.innerHTML = `
 
-        <div class="pub-title">
-          ${pub.authors}.
-          "${title}."
+        <div class="pub-index">
+          [${index + 1}]
         </div>
 
-        <div class="pub-venue">
-          ${pub.venue}
+        <div class="pub-content">
+
+          <div class="pub-title">
+            ${pub.authors}.
+            ${titleHtml}
+          </div>
+
+          <div class="pub-meta">
+            <span class="pub-venue">
+              ${pub.venue}
+            </span>
+
+            ${linkHtml}
+          </div>
+
         </div>
+
 
       `;
 
