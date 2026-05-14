@@ -335,24 +335,6 @@
 
     {
       authors:
-        'Meng Jian, Yulong Bai, Xusong Fu, Jingjing Guo, Ge Shi*, Lifang Wu',
-
-      title_en:
-        'Counterfactual Graph Convolutional Learning for Personalized Recommendation',
-
-      title_zh:
-        '面向个性化推荐的反事实图卷积学习',
-
-      venue:
-        'ACM TIST, 2024',
-
-      url:
-        'https://doi.org/10.1145/3655632',
-
-    },
-
-    {
-      authors:
         'Xuefen Li, Bo Wang, Ge Shi*, Chong Feng, Jiahao Teng',
 
       title_en:
@@ -975,6 +957,38 @@
       <div class="pi-title">
         ${pi.title}
       </div>
+
+      <div class="pi-links">
+
+        <a
+          href="https://beta-nlp.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ${
+            currentLang === 'en'
+              ? 'BetaNLP Team'
+              : 'BetaNLP 团队'
+          }
+        </a>
+
+        <a
+          href="https://scholar.google.com/citations?user=I0C2oxMAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Scholar
+        </a>
+
+      </div>
+
+      <p class="pi-affiliation-note">
+        ${
+          currentLang === 'en'
+            ? 'This research group is part of the BetaNLP team.'
+            : '本研究团队隶属于 BetaNLP 团队。'
+        }
+      </p>
 
       ${pi.desc.map(d => `
         <p>${d}</p>

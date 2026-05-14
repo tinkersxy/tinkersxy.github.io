@@ -989,7 +989,37 @@ nav {
 }
 
 .pi-title {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.pi-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.pi-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  color: var(--primary);
+  background: var(--bg-card);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.pi-links a:hover {
+  border-color: var(--primary);
+  background: var(--bg-hover);
+}
+
+.pi-affiliation-note {
+  margin-bottom: 18px;
   color: var(--text-muted);
   font-size: 0.95rem;
 }
