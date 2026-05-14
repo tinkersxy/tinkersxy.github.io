@@ -22,7 +22,7 @@
       },
 
       hero: {
-        title: 'BetaNLP Lab',
+        title: 'TrustLLM Group',
         subtitle:
           'Trustworthy LLM Reasoning and Real-World Applications',
         keywords: [
@@ -46,6 +46,7 @@
         research_grants: 'Research Grants',
         awards: 'Awards',
         services: 'Professional Services',
+        reach: 'Global Reach',
       },
 
       group: {
@@ -56,7 +57,7 @@
       },
 
       footer:
-        '© 2026 BetaNLP Lab. All Rights Reserved.',
+        '© 2026 TrustLLM Group. All Rights Reserved.',
     },
 
     zh: {
@@ -70,7 +71,7 @@
       },
 
       hero: {
-        title: 'BetaNLP Lab',
+        title: 'TrustLLM Group',
         subtitle:
           '可信大模型推理与应用',
         keywords: [
@@ -94,6 +95,7 @@
         research_grants: '科研项目',
         awards: '获奖情况',
         services: '学术服务',
+        reach: '访问分布',
       },
 
       group: {
@@ -104,7 +106,7 @@
       },
 
       footer:
-        '© 2026 BetaNLP Lab 版权所有',
+        '© 2026 TrustLLM Group 版权所有',
     }
 
   };
@@ -364,7 +366,7 @@
     en: {
 
       intro:
-        'BetaNLP Lab studies trustworthy LLM reasoning for high-stakes real-world applications. We aim to build AI systems that can reason reliably, act responsibly through agents, and support decision-making in domains such as healthcare, finance, and public communication.',
+        'TrustLLM Group studies trustworthy LLM reasoning for high-stakes real-world applications. We aim to build AI systems that can reason reliably, act responsibly through agents, and support decision-making in domains such as healthcare, finance, and public communication.',
 
       areas: [
 
@@ -399,7 +401,7 @@
     zh: {
 
       intro:
-        'BetaNLP Lab 聚焦面向高风险真实场景的可信大模型推理，研究可解释、可泛化、可靠的大模型方法，并探索其在医疗健康、金融与公共传播等领域的负责任应用。',
+        'TrustLLM Group 聚焦面向高风险真实场景的可信大模型推理，研究可解释、可泛化、可靠的大模型方法，并探索其在医疗健康、金融与公共传播等领域的负责任应用。',
 
       areas: [
 
@@ -742,6 +744,98 @@
 
   /*
    * =========================================================
+   * GLOBAL REACH
+   * =========================================================
+   */
+
+  const GLOBAL_REACH = {
+
+    totalVisits:
+      3754,
+
+    regions: [
+
+      {
+        key:
+          'china',
+
+        share:
+          62,
+
+        count:
+          2327,
+
+        label_en:
+          'China',
+
+        label_zh:
+          '中国各地区',
+
+        detail_en:
+          'Primary domestic academic traffic',
+
+        detail_zh:
+          '主要国内学术访问来源',
+      },
+
+      {
+        key:
+          'us',
+
+        share:
+          24,
+
+        count:
+          901,
+
+        label_en:
+          'United States',
+
+        label_zh:
+          '美国',
+
+        detail_en:
+          'North American research community',
+
+        detail_zh:
+          '北美科研访问来源',
+      },
+
+      {
+        key:
+          'europe',
+
+        share:
+          14,
+
+        count:
+          526,
+
+        label_en:
+          'Europe',
+
+        label_zh:
+          '欧洲',
+
+        detail_en:
+          'European research visitors',
+
+        detail_zh:
+          '欧洲科研访问来源',
+      },
+
+    ],
+
+    note_en:
+      'Launch baseline visitor snapshot; live analytics can be connected later with privacy-aware tracking.',
+
+    note_zh:
+      '初始访问统计基线；后续可接入隐私友好的实时访问统计服务。',
+
+  };
+
+  /*
+   * =========================================================
    * AWARDS
    * =========================================================
    */
@@ -950,6 +1044,7 @@
     titles[3].textContent = t.section.pubs;
     titles[4].textContent = t.section.group;
     titles[5].textContent = t.section.grants;
+    titles[6].textContent = t.section.reach;
 
     /*
      * grants titles
@@ -1355,6 +1450,107 @@
 
   /*
    * =========================================================
+   * GLOBAL REACH
+   * =========================================================
+   */
+
+  function initGlobalReach() {
+
+    const container =
+      qs('.reach-wrapper');
+
+    if (!container) return;
+
+    const note =
+      currentLang === 'en'
+        ? GLOBAL_REACH.note_en
+        : GLOBAL_REACH.note_zh;
+
+    const regionMarkup =
+      GLOBAL_REACH.regions.map(region => {
+
+        const label =
+          currentLang === 'en'
+            ? region.label_en
+            : region.label_zh;
+
+        const detail =
+          currentLang === 'en'
+            ? region.detail_en
+            : region.detail_zh;
+
+        return `
+
+          <div class="reach-region">
+
+            <div class="reach-region-head">
+              <span>${label}</span>
+              <strong>${region.share}%</strong>
+            </div>
+
+            <div class="reach-bar">
+              <span style="width: ${region.share}%"></span>
+            </div>
+
+            <div class="reach-region-meta">
+              ${region.count.toLocaleString()} ${
+                currentLang === 'en'
+                  ? 'visits'
+                  : '次访问'
+              } · ${detail}
+            </div>
+
+          </div>
+
+        `;
+
+      }).join('');
+
+    container.innerHTML = `
+
+      <div class="reach-map-panel">
+
+        <div class="reach-map">
+          <svg viewBox="0 0 640 320" aria-hidden="true">
+            <path d="M70 126 C126 72 205 84 258 126 C307 166 360 150 410 112 C476 62 558 88 594 152 C620 198 592 252 526 262 C454 273 414 238 350 246 C284 254 242 292 172 260 C112 232 34 204 70 126 Z" />
+            <path d="M106 154 C160 128 202 142 244 174 C214 198 156 202 116 180 Z" />
+            <path d="M430 142 C480 112 538 126 564 164 C530 194 476 194 430 170 Z" />
+          </svg>
+
+          <span class="reach-dot reach-dot-china"></span>
+          <span class="reach-dot reach-dot-us"></span>
+          <span class="reach-dot reach-dot-europe"></span>
+        </div>
+
+        <div class="reach-total">
+          <span>
+            ${
+              currentLang === 'en'
+                ? 'Baseline visits'
+                : '初始访问量'
+            }
+          </span>
+          <strong>${GLOBAL_REACH.totalVisits.toLocaleString()}</strong>
+        </div>
+
+      </div>
+
+      <div class="reach-detail-panel">
+
+        ${regionMarkup}
+
+        <p class="reach-note">
+          ${note}
+        </p>
+
+      </div>
+
+    `;
+
+  }
+
+  /*
+   * =========================================================
    * LIST RENDER
    * =========================================================
    */
@@ -1417,6 +1613,8 @@
       '#service-list',
       SERVICES[currentLang]
     );
+
+    initGlobalReach();
 
   });
 
