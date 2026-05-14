@@ -382,7 +382,7 @@
     en: {
 
       intro:
-        'BetaNLP Lab studies trustworthy LLM reasoning and its real-world applications. We aim to build AI systems that can reason reliably, align information across modalities, and support high-stakes decisions in domains such as healthcare, communication, and intelligent recommendation.',
+        'BetaNLP Lab studies trustworthy LLM reasoning for high-stakes real-world applications. We aim to build AI systems that can reason reliably, act responsibly through agents, and support decision-making in domains such as healthcare, finance, and public communication.',
 
       areas: [
 
@@ -396,18 +396,18 @@
 
         {
           title:
-            'Medical and Multimodal Intelligence',
+            'LLM Agents and Tool Use',
 
           desc:
-            'Clinical language models, electronic medical records, medical report generation, multimodal alignment, and healthcare AI.',
+            'Agentic systems that combine planning, tool use, memory, and human alignment to support controllable and accountable task execution.',
         },
 
         {
           title:
-            'Real-World AI Applications',
+            'High-Stakes Real-World Applications',
 
           desc:
-            'LLM-powered recommendation, crisis communication analysis, low-resource OCR, and agentic systems for complex scenarios.',
+            'Trustworthy AI applications in healthcare, finance, public communication, and other domains where reliability and accountability are essential.',
         },
 
       ],
@@ -417,7 +417,7 @@
     zh: {
 
       intro:
-        'BetaNLP Lab 聚焦可信大模型推理与应用，面向医疗健康、传播计算、智能推荐等真实场景，研究可解释、可泛化、可靠的大模型推理方法与智能系统。',
+        'BetaNLP Lab 聚焦面向高风险真实场景的可信大模型推理，研究可解释、可泛化、可靠的大模型方法，并探索其在医疗健康、金融与公共传播等领域的负责任应用。',
 
       areas: [
 
@@ -431,18 +431,18 @@
 
         {
           title:
-            '医疗与多模态智能',
+            '大模型智能体与工具使用',
 
           desc:
-            '面向电子病历、临床语言模型、医学报告生成与多模态对齐，构建服务医疗健康场景的智能技术。',
+            '研究融合规划、工具调用、记忆机制与人类对齐的大模型智能体，支撑可控、可追踪、可问责的复杂任务执行。',
         },
 
         {
           title:
-            '真实场景智能应用',
+            '高风险真实场景应用',
 
           desc:
-            '探索大模型驱动的推荐系统、危机传播分析、低资源 OCR 与复杂场景智能体应用。',
+            '面向医疗健康、金融、公共传播等高风险场景，探索可靠性、可解释性与责任边界明确的可信人工智能应用。',
         },
 
       ],
@@ -483,7 +483,7 @@
     ms: [
 
       {
-        name_en: 'Yu Yi',
+        name_en: 'Yi Yu',
         name_zh: '于怡',
 
         role_en:
@@ -501,7 +501,7 @@
 
       {
         name_en: 
-          'wamgxuan',
+          'Xuan Wang',
 
         name_zh: 
           '王瑄',
@@ -524,13 +524,14 @@
     visiting: [
 
       {
-        name: 'Visiting Student',
+        name_en: 'Ruihan Yang',
+        name_zh: '杨瑞涵',
 
         role_en:
-          'Visiting Student',
+          'Visiting Student · Zhengzhou University',
 
         role_zh:
-          '访问学生',
+          '访问学生 · 郑州大学',
 
         desc_en:
           'Research collaboration on multimodal reasoning and medical AI.',
@@ -563,6 +564,28 @@
 
         role_zh:
           '保研至清华大学自动化学院',
+      },
+
+      {
+        name_en: 'Sinuo Deng',
+        name_zh: '邓斯诺',
+
+        role_en:
+          'China National Petroleum Corporation',
+
+        role_zh:
+          '中国石油天然气集团有限公司',
+      },
+
+      {
+        name_en: 'Heng Zhang',
+        name_zh: '张恒',
+
+        role_en:
+          'Software Development Center, Agricultural Bank of China',
+
+        role_zh:
+          '中国农业银行软件开发中心',
       }
 
     ]
