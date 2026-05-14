@@ -167,6 +167,34 @@
 
     {
       authors:
+        'Tuo Wang, Meng Jian, Ge Shi*, Lifang Wu, Yashen Wang',
+
+      title_en:
+        'MSR-Rec: Multi-Step Reasoning-Enhanced LLM for Sequential Recommendation',
+
+      title_zh:
+        'MSR-Rec：面向序列推荐的多步推理增强大语言模型',
+
+      venue:
+        'AAAI 2026 (CCF A)',
+    },
+
+    {
+      authors:
+        'Meng Jian, Ruoxi Li, Tuo Wang, Ge Shi*, Lifang Wu',
+
+      title_en:
+        'Large Multimodal Model-based Intent Prompting Learning for Multimedia Recommendation',
+
+      title_zh:
+        '面向多媒体推荐的大型多模态模型意图提示学习方法',
+
+      venue:
+        'Information Fusion, 2026 (SCI Q1)',
+    },
+
+    {
+      authors:
         'Qingyong Su, Chong Feng, Ge Shi*, Bo Wang, Yan Zhuang',
 
       title_en:
@@ -383,7 +411,55 @@
   const TIMELINE = [
 
     {
-      date: '2026',
+      date: 'Apr 2026',
+
+      title_en:
+        'Two Papers Accepted by ACL 2026',
+
+      title_zh:
+        '两篇论文被 ACL 2026 录用',
+
+      desc_en:
+        'Two papers were accepted by ACL 2026: one on low-resource multilingual OCR in the main conference, and one on computational hypothesis generation for crisis communication in Findings of ACL.',
+
+      desc_zh:
+        '两篇论文被 ACL 2026 录用：一篇关于低资源多语种 OCR 的工作入选 ACL 主会，一篇关于危机传播中假设生成计算框架的工作入选 ACL Findings。',
+    },
+
+    {
+      date: 'Mar 2026',
+
+      title_en:
+        'Information Fusion Paper Published',
+
+      title_zh:
+        'Information Fusion 论文发表',
+
+      desc_en:
+        'The paper "Large Multimodal Model-based Intent Prompting Learning for Multimedia Recommendation" was published in Information Fusion.',
+
+      desc_zh:
+        '论文“Large Multimodal Model-based Intent Prompting Learning for Multimedia Recommendation”发表于 Information Fusion。',
+    },
+
+    {
+      date: 'Mar 2026',
+
+      title_en:
+        'MSR-Rec Accepted by AAAI 2026',
+
+      title_zh:
+        'MSR-Rec 被 AAAI 2026 录用',
+
+      desc_en:
+        'The paper "MSR-Rec: Multi-Step Reasoning-Enhanced LLM for Sequential Recommendation" was accepted by AAAI 2026.',
+
+      desc_zh:
+        '论文“MSR-Rec: Multi-Step Reasoning-Enhanced LLM for Sequential Recommendation”被 AAAI 2026 录用。',
+    },
+
+    {
+      date: 'Jan 2026',
 
       title_en:
         'Lab Website Released',
