@@ -344,7 +344,7 @@
         '缓解视频与文本时间序列差异的视频定位方法',
 
       venue:
-        'COLING 2024',
+        'COLING 2024 (CCF B)',
 
       url:
         'https://aclanthology.org/2025.coling-main.655/',
@@ -750,25 +750,41 @@
 
     en: [
 
-      'IMLIP2025 Best Paper Award.',
+      'Best Paper Award, International Conference on Multilingual Intelligent Information Processing (IMLIP 2025).',
 
-      'CCL2025 ICD Coding Competition Champion.',
+      '1st Place, CCL 2025 Chinese Electronic Medical Record ICD Diagnosis Coding Evaluation Track, Chinese Information Processing Society of China.',
 
-      'CCKS2023 Outstanding Resource Paper Award.',
+      'Outstanding Resource Paper Award, CCKS 2023, Chinese Information Processing Society of China.',
 
-      'NLPCC2022 Competition Champion.',
+      'First-class Achievement, CAAI Teaching Achievement Incentive Program (Ranked 2nd), 2023.',
+
+      'Champion, NLPCC 2022 Evaluation Competition, China Computer Federation.',
+
+      'Outstanding Undergraduate Thesis Advisor, Beijing, 2022.',
+
+      'Champion, NLPCC 2021 Evaluation Competition, China Computer Federation.',
+
+      'Best Paper Nomination, PRCV 2021.',
 
     ],
 
     zh: [
 
-      'IMLIP2025 最佳论文奖。',
+      '国际多语种智能信息处理会议 IMLIP2025 最佳论文。',
 
-      'CCL2025 ICD 编码评测冠军。',
+      '中国中文信息学会 CCL2025 中文电子病历 ICD 诊断编码评测赛道第 1 名。',
 
-      'CCKS2023 优秀资源论文奖。',
+      '中国中文信息学会全国知识图谱和语义计算大会 CCKS2023 优秀资源论文。',
 
-      'NLPCC2022 评测冠军。',
+      '中国人工智能学会教学成果激励计划一类成果（序2），2023。',
+
+      '中国计算机学会 NLPCC2022 评测竞赛冠军。',
+
+      '2022 北京市优秀本科毕业设计指导教师。',
+
+      '中国计算机学会 NLPCC2021 评测竞赛冠军。',
+
+      '中国模式识别与计算机视觉大会 PRCV2021 最佳论文提名。',
 
     ]
 
