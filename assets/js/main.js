@@ -46,7 +46,6 @@
         research_grants: 'Research Grants',
         awards: 'Awards',
         services: 'Professional Services',
-        reach: 'Global Reach',
       },
 
       group: {
@@ -95,7 +94,6 @@
         research_grants: '科研项目',
         awards: '获奖情况',
         services: '学术服务',
-        reach: '访问分布',
       },
 
       group: {
@@ -332,6 +330,42 @@
 
       url:
         'https://doi.org/10.1145/3731715.3733287',
+
+    },
+
+    {
+      authors:
+        'Sinuo Deng, Lifang Wu, Ge Shi*, Lehao Xing, Meng Jian, Ye Xiang, Ruihai Dong',
+
+      title_en:
+        'Learning to Compose Diversified Prompts for Image Emotion Classification',
+
+      title_zh:
+        '面向图像情感分类的多样化提示组合学习方法',
+
+      venue:
+        'Computational Visual Media, 2024 (ESI Highly Cited Paper, ESI Hot Paper)',
+
+      url:
+        'https://doi.org/10.1007/s41095-023-0367-5',
+
+    },
+
+    {
+      authors:
+        'Ge Shi, Sinuo Deng, Bo Wang, Chong Feng, Yan Zhuang, Xiaomei Wang',
+
+      title_en:
+        'One for All: A Unified Generative Framework for Image Emotion Classification',
+
+      title_zh:
+        'One for All：面向图像情感分类的统一生成式框架',
+
+      venue:
+        'IEEE TCSVT, 2024 (ESI Highly Cited Paper, ESI Hot Paper)',
+
+      url:
+        'https://doi.org/10.1109/TCSVT.2023.3309582',
 
     },
 
@@ -744,98 +778,6 @@
 
   /*
    * =========================================================
-   * GLOBAL REACH
-   * =========================================================
-   */
-
-  const GLOBAL_REACH = {
-
-    totalVisits:
-      3754,
-
-    regions: [
-
-      {
-        key:
-          'china',
-
-        share:
-          62,
-
-        count:
-          2327,
-
-        label_en:
-          'China',
-
-        label_zh:
-          '中国各地区',
-
-        detail_en:
-          'Primary domestic academic traffic',
-
-        detail_zh:
-          '主要国内学术访问来源',
-      },
-
-      {
-        key:
-          'us',
-
-        share:
-          24,
-
-        count:
-          901,
-
-        label_en:
-          'United States',
-
-        label_zh:
-          '美国',
-
-        detail_en:
-          'North American research community',
-
-        detail_zh:
-          '北美科研访问来源',
-      },
-
-      {
-        key:
-          'europe',
-
-        share:
-          14,
-
-        count:
-          526,
-
-        label_en:
-          'Europe',
-
-        label_zh:
-          '欧洲',
-
-        detail_en:
-          'European research visitors',
-
-        detail_zh:
-          '欧洲科研访问来源',
-      },
-
-    ],
-
-    note_en:
-      'Launch baseline visitor snapshot; live analytics can be connected later with privacy-aware tracking.',
-
-    note_zh:
-      '初始访问统计基线；后续可接入隐私友好的实时访问统计服务。',
-
-  };
-
-  /*
-   * =========================================================
    * AWARDS
    * =========================================================
    */
@@ -1044,7 +986,6 @@
     titles[3].textContent = t.section.pubs;
     titles[4].textContent = t.section.group;
     titles[5].textContent = t.section.grants;
-    titles[6].textContent = t.section.reach;
 
     /*
      * grants titles
@@ -1450,107 +1391,6 @@
 
   /*
    * =========================================================
-   * GLOBAL REACH
-   * =========================================================
-   */
-
-  function initGlobalReach() {
-
-    const container =
-      qs('.reach-wrapper');
-
-    if (!container) return;
-
-    const note =
-      currentLang === 'en'
-        ? GLOBAL_REACH.note_en
-        : GLOBAL_REACH.note_zh;
-
-    const regionMarkup =
-      GLOBAL_REACH.regions.map(region => {
-
-        const label =
-          currentLang === 'en'
-            ? region.label_en
-            : region.label_zh;
-
-        const detail =
-          currentLang === 'en'
-            ? region.detail_en
-            : region.detail_zh;
-
-        return `
-
-          <div class="reach-region">
-
-            <div class="reach-region-head">
-              <span>${label}</span>
-              <strong>${region.share}%</strong>
-            </div>
-
-            <div class="reach-bar">
-              <span style="width: ${region.share}%"></span>
-            </div>
-
-            <div class="reach-region-meta">
-              ${region.count.toLocaleString()} ${
-                currentLang === 'en'
-                  ? 'visits'
-                  : '次访问'
-              } · ${detail}
-            </div>
-
-          </div>
-
-        `;
-
-      }).join('');
-
-    container.innerHTML = `
-
-      <div class="reach-map-panel">
-
-        <div class="reach-map">
-          <svg viewBox="0 0 640 320" aria-hidden="true">
-            <path d="M70 126 C126 72 205 84 258 126 C307 166 360 150 410 112 C476 62 558 88 594 152 C620 198 592 252 526 262 C454 273 414 238 350 246 C284 254 242 292 172 260 C112 232 34 204 70 126 Z" />
-            <path d="M106 154 C160 128 202 142 244 174 C214 198 156 202 116 180 Z" />
-            <path d="M430 142 C480 112 538 126 564 164 C530 194 476 194 430 170 Z" />
-          </svg>
-
-          <span class="reach-dot reach-dot-china"></span>
-          <span class="reach-dot reach-dot-us"></span>
-          <span class="reach-dot reach-dot-europe"></span>
-        </div>
-
-        <div class="reach-total">
-          <span>
-            ${
-              currentLang === 'en'
-                ? 'Baseline visits'
-                : '初始访问量'
-            }
-          </span>
-          <strong>${GLOBAL_REACH.totalVisits.toLocaleString()}</strong>
-        </div>
-
-      </div>
-
-      <div class="reach-detail-panel">
-
-        ${regionMarkup}
-
-        <p class="reach-note">
-          ${note}
-        </p>
-
-      </div>
-
-    `;
-
-  }
-
-  /*
-   * =========================================================
    * LIST RENDER
    * =========================================================
    */
@@ -1613,8 +1453,6 @@
       '#service-list',
       SERVICES[currentLang]
     );
-
-    initGlobalReach();
 
   });
 
