@@ -1308,7 +1308,7 @@ nav {
   width: min(44vw, 620px);
   height: min(64vh, 620px);
 
-  z-index: 1;
+  z-index: 3;
   display: grid;
   grid-template-columns:
     repeat(6, minmax(0, 1fr));
@@ -1318,6 +1318,7 @@ nav {
   padding: 10px;
   border: 1px solid rgba(255,255,255,0.18);
   background: rgba(255,255,255,0.16);
+  opacity: 0.88;
   filter:
     drop-shadow(0 24px 80px rgba(0,0,0,0.38));
   transform:
