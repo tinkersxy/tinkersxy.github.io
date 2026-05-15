@@ -927,14 +927,6 @@ nav {
   overflow: hidden;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -1296,7 +1288,7 @@ nav {
   inset: -28px;
   z-index: 0;
   background:
-    url('../images/top.jpg')
+    url('../images/hero-collage-01.jpg')
     center / cover
     no-repeat;
   filter:
@@ -1306,7 +1298,7 @@ nav {
   transform: scale(1.08);
 }
 
-.hero-bg {
+.hero-collage {
   position: absolute;
   top: 50%;
   right: clamp(24px, 7vw, 148px);
@@ -1317,12 +1309,62 @@ nav {
   height: min(64vh, 620px);
 
   z-index: 1;
-  object-fit: contain;
-  object-position: center;
+  display: grid;
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.16);
   filter:
     drop-shadow(0 24px 80px rgba(0,0,0,0.38));
   transform:
     translateY(-50%);
+}
+
+.hero-collage-item {
+  overflow: hidden;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.08);
+}
+
+.hero-collage-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-collage-item:nth-child(6n + 1) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.hero-collage-item:nth-child(6n + 2) {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.hero-collage-item:nth-child(6n + 3) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.hero-collage-item:nth-child(6n + 4) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.hero-collage-item:nth-child(6n + 5) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.hero-collage-item:nth-child(n + 7) {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 /* =========================================================
@@ -1725,15 +1767,15 @@ nav {
       0 0 64px;
   }
 
-  .hero-bg {
+  .hero-collage {
     top: 8px;
     left: 0;
     right: auto;
     width: 100%;
-    height: auto;
+    height: 58vh;
     transform: none;
-    object-fit: contain;
-    object-position: center top;
+    gap: 6px;
+    padding: 6px;
   }
 
   .hero-content {

@@ -111,6 +111,26 @@
 
   /*
    * =========================================================
+   * HERO IMAGES
+   * =========================================================
+   */
+
+  const HERO_IMAGES = [
+
+    'hero-collage-01.jpg',
+
+    'hero-collage-02.jpg',
+
+    'hero-collage-03.jpg',
+
+    'hero-collage-04.jpg',
+
+    'hero-collage-05.jpg',
+
+  ];
+
+  /*
+   * =========================================================
    * PI
    * =========================================================
    */
@@ -1122,6 +1142,43 @@
 
   /*
    * =========================================================
+   * HERO COLLAGE
+   * =========================================================
+   */
+
+  function initHeroCollage() {
+
+    const collage =
+      qs('.hero-collage');
+
+    if (!collage) return;
+
+    clear(collage);
+
+    HERO_IMAGES.forEach((file, index) => {
+
+      const item =
+        document.createElement('div');
+
+      item.className =
+        `hero-collage-item hero-collage-item-${index + 1}`;
+
+      item.innerHTML = `
+        <img
+          src="assets/images/${file}"
+          alt="TrustLLM Group moment ${index + 1}"
+          loading="${index < 2 ? 'eager' : 'lazy'}"
+        />
+      `;
+
+      collage.appendChild(item);
+
+    });
+
+  }
+
+  /*
+   * =========================================================
    * RESEARCH VISION
    * =========================================================
    */
@@ -1428,6 +1485,8 @@
     initLanguageToggle();
 
     initStaticText();
+
+    initHeroCollage();
 
     initPI();
 
