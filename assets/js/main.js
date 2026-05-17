@@ -232,6 +232,9 @@
 
       venue:
         'IEEE Journal of Biomedical and Health Informatics, 2026 (SCI Q1)',
+
+      url:
+        'https://doi.org/10.1109/JBHI.2026.3690515',
     },
 
     {
