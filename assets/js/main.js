@@ -222,6 +222,20 @@
 
     {
       authors:
+        'Fanqing Meng, Chong Feng, Ge Shi*, Xia Liu*, Bo Wang, Kaiyuan Zhang, Yan Zhuang',
+
+      title_en:
+        'Medical Knowledge-Driven Contrastive Learning for Similar Patient Retrieval',
+
+      title_zh:
+        '面向相似患者检索的医学知识驱动对比学习方法',
+
+      venue:
+        'IEEE Journal of Biomedical and Health Informatics, 2026 (SCI Q1)',
+    },
+
+    {
+      authors:
         'Mengxiao Zhu, Haixu Chen, Jiu Sha, Jie Liu, Ge Shi*',
 
       title_en:
@@ -659,6 +673,22 @@
    */
 
   const TIMELINE = [
+
+    {
+      date: 'May 2026',
+
+      title_en:
+        'SCI Q1 Journal Paper Accepted',
+
+      title_zh:
+        'SCI 一区期刊论文录用',
+
+      desc_en:
+        'The paper "Medical Knowledge-Driven Contrastive Learning for Similar Patient Retrieval" was accepted by IEEE Journal of Biomedical and Health Informatics.',
+
+      desc_zh:
+        '论文“Medical Knowledge-Driven Contrastive Learning for Similar Patient Retrieval”被 IEEE Journal of Biomedical and Health Informatics 录用。',
+    },
 
     {
       date: 'May 2026',
