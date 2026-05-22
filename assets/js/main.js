@@ -217,24 +217,7 @@
         '面向电子病历的临床大语言模型',
 
       venue:
-        'npj Digital Medicine, 2026 (Nature Portfolio)',
-    },
-
-    {
-      authors:
-        'Fanqing Meng, Chong Feng, Ge Shi*, Xia Liu*, Bo Wang, Kaiyuan Zhang, Yan Zhuang',
-
-      title_en:
-        'Medical Knowledge-Driven Contrastive Learning for Similar Patient Retrieval',
-
-      title_zh:
-        '面向相似患者检索的医学知识驱动对比学习方法',
-
-      venue:
-        'IEEE Journal of Biomedical and Health Informatics, 2026 (SCI Q1)',
-
-      url:
-        'https://doi.org/10.1109/JBHI.2026.3690515',
+        'npj Digital Medicine, 2026 (SCI Q1, Nature Portfolio)',
     },
 
     {
@@ -248,7 +231,7 @@
         '超越原子字符：面向低资源多语种 OCR 的字形感知子字符对齐方法',
 
       venue:
-        'ACL 2026 Main (CCF A)',
+        'ACL 2026 (CCF A)',
     },
 
     {
@@ -301,6 +284,23 @@
 
     {
       authors:
+        'Fanqing Meng, Chong Feng, Ge Shi*, Xia Liu*, Bo Wang, Kaiyuan Zhang, Yan Zhuang',
+
+      title_en:
+        'Medical Knowledge-Driven Contrastive Learning for Similar Patient Retrieval',
+
+      title_zh:
+        '面向相似患者检索的医学知识驱动对比学习方法',
+
+      venue:
+        'IEEE Journal of Biomedical and Health Informatics, 2026 (SCI Q1)',
+
+      url:
+        'https://doi.org/10.1109/JBHI.2026.3690515',
+    },
+
+    {
+      authors:
         'Qingyong Su, Chong Feng, Ge Shi*, Bo Wang, Yan Zhuang',
 
       title_en:
@@ -327,7 +327,7 @@
         '基于图推荐的几何增强自蒸馏方法',
 
       venue:
-        'ACM TOIS, 2025 (CCF A)',
+        'ACM Transactions on Information Systems, 2025 (CCF A)',
 
       url:
         'https://doi.org/10.1145/3729223',
@@ -336,7 +336,7 @@
 
     {
       authors:
-        'Xinyu Zhang, Limei Hu*, Luhao Zhang, Wentao Cheng, Yashen Wang, Ge Shi*',
+        'Xinyu Zhang, Limei Hu*, Luhao Zhang, Wentao Cheng, Yashen Wang, Ge Shi*, Chong Feng, Liqiang Nie',
 
       title_en:
         'Bi-Tuning with Collaborative Information for Controllable LLM-based Sequential Recommendation',
@@ -372,19 +372,19 @@
 
     {
       authors:
-        'Sinuo Deng, Lifang Wu, Ge Shi*, Lehao Xing, Meng Jian, Ye Xiang, Ruihai Dong',
+        'Xuefen Li, Bo Wang, Ge Shi*, Chong Feng, Jiahao Teng',
 
       title_en:
-        'Learning to Compose Diversified Prompts for Image Emotion Classification',
+        'Mitigating the Discrepancy Between Video and Text Temporal Sequences: A Time-Perception Enhanced Video Grounding Method',
 
       title_zh:
-        '面向图像情感分类的多样化提示组合学习方法',
+        '缓解视频与文本时间序列差异：一种时间感知增强的视频定位方法',
 
       venue:
-        'Computational Visual Media, 2024 (ESI Highly Cited Paper, ESI Hot Paper)',
+        'COLING 2024 (CCF B)',
 
       url:
-        'https://doi.org/10.1007/s41095-023-0367-5',
+        'https://aclanthology.org/2025.coling-main.655/',
 
     },
 
@@ -399,7 +399,7 @@
         'One for All：面向图像情感分类的统一生成式框架',
 
       venue:
-        'IEEE TCSVT, 2024 (ESI Highly Cited Paper, ESI Hot Paper)',
+        'IEEE Transactions on Circuits and Systems for Video Technology, 2024 (SCI Q1, ESI Highly Cited Paper, ESI Hot Paper)',
 
       url:
         'https://doi.org/10.1109/TCSVT.2023.3309582',
@@ -408,19 +408,145 @@
 
     {
       authors:
-        'Xuefen Li, Bo Wang, Ge Shi*, Chong Feng, Jiahao Teng',
+        'Sinuo Deng, Lifang Wu, Ge Shi*',
 
       title_en:
-        'Mitigating the Discrepancy Between Video and Text Temporal Sequences',
+        'Learning to Compose Diversified Prompts for Image Emotion Classification',
 
       title_zh:
-        '缓解视频与文本时间序列差异的视频定位方法',
+        '面向图像情感分类的多样化提示组合学习方法',
 
       venue:
-        'COLING 2024 (CCF B)',
+        'Computational Visual Media, 2023 (SCI Q1, ESI Highly Cited Paper, ESI Hot Paper)',
 
       url:
-        'https://aclanthology.org/2025.coling-main.655/',
+        'https://doi.org/10.1007/s41095-023-0367-5',
+
+    },
+
+    {
+      authors:
+        'Bo Wang, He-Yan Huang, Xiaochi Wei, Ge Shi, Xiao Liu, Chong Feng, Tong Zhou, Shuaiqiang Wang, Dawei Yin',
+
+      title_en:
+        'Boosting Event Extraction with Denoised Structure-to-Text Augmentation',
+
+      title_zh:
+        '基于去噪结构到文本增强的事件抽取方法',
+
+      venue:
+        'Findings of ACL 2023',
+
+      url:
+        'https://aclanthology.org/2023.findings-acl.716/',
+
+    },
+
+    {
+      authors:
+        'Ge Shi, Yunyue Su, Yongliang Ma, Ming Zhou',
+
+      title_en:
+        'A Hybrid Detection and Generation Framework with Separate Encoders for Event Extraction',
+
+      title_zh:
+        '面向事件抽取的分离编码器混合检测与生成框架',
+
+      venue:
+        'EACL 2023',
+
+      url:
+        'https://aclanthology.org/2023.eacl-main.231/',
+
+    },
+
+    {
+      authors:
+        'Heyan Huang, Xiao Liu, Ge Shi, Qian Liu',
+
+      title_en:
+        'Event Extraction with Dynamic Prefix Tuning and Relevance Retrieval',
+
+      title_zh:
+        '基于动态前缀调优与相关性检索的事件抽取',
+
+      venue:
+        'IEEE Transactions on Knowledge and Data Engineering, 2023 (CCF A)',
+
+      url:
+        'https://doi.org/10.1109/TKDE.2023.3266495',
+
+    },
+
+    {
+      authors:
+        'Sinuo Deng, Lifang Wu, Ge Shi*, Lehao Xing, Wenjin Hu, Heng Zhang, Ye Xiang',
+
+      title_en:
+        'Simple but Powerful, a Language-Supervised Method for Image Emotion Classification',
+
+      title_zh:
+        '简单而强大：面向图像情感分类的语言监督方法',
+
+      venue:
+        'IEEE Transactions on Affective Computing, 2023 (SCI Q1)',
+
+      url:
+        'https://doi.org/10.1109/TAFFC.2022.3225049',
+
+    },
+
+    {
+      authors:
+        'Wenjin Hu, Yukun Chen, Lifang Wu, Ge Shi*, Meng Jian, Sinuo Deng',
+
+      title_en:
+        'Boundary-Guided Probability Hashing',
+
+      title_zh:
+        '边界引导的概率哈希方法',
+
+      venue:
+        'ICME 2022 (CCF B)',
+
+      url:
+        'https://dblp.org/rec/conf/icmcs/HuCW0JD22',
+
+    },
+
+    {
+      authors:
+        'Xiao Liu, He-Yan Huang, Ge Shi, Bo Wang',
+
+      title_en:
+        'Dynamic Prefix-Tuning for Generative Template-based Event Extraction',
+
+      title_zh:
+        '面向生成式模板事件抽取的动态前缀调优方法',
+
+      venue:
+        'ACL 2022 (CCF A)',
+
+      url:
+        'https://aclanthology.org/2022.acl-long.358/',
+
+    },
+
+    {
+      authors:
+        'Sinuo Deng#, Ge Shi#, Lifang Wu, Lehao Xing, Wenjin Hu, Heng Zhang, Ye Xiang',
+
+      title_en:
+        'SimEmotion: A Simple Knowledgeable Prompt Tuning Method for Image Emotion Classification',
+
+      title_zh:
+        'SimEmotion：面向图像情感分类的简单知识化提示调优方法',
+
+      venue:
+        'DASFAA 2022 (CCF B)',
+
+      url:
+        'https://doi.org/10.1007/978-3-031-00129-1_15',
 
     },
 
