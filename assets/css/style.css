@@ -1135,6 +1135,15 @@ nav {
   color: var(--primary);
 }
 
+.pub-author-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-author-link:hover {
+  color: var(--primary);
+}
+
 .pub-meta {
   display: flex;
   flex-wrap: wrap;
