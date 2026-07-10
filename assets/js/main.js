@@ -208,6 +208,20 @@
 
     {
       authors:
+        '<a class="pub-author-link" href="https://openreview.net/profile?id=~Changsen_Yuan1" target="_blank" rel="noopener noreferrer">Changsen Yuan</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yueying_Liu4" target="_blank" rel="noopener noreferrer">Yueying Liu</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Ge_Shi4" target="_blank" rel="noopener noreferrer">Ge Shi</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yanghao_Zhou2" target="_blank" rel="noopener noreferrer">Yanghao Zhou</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Chong_Feng1" target="_blank" rel="noopener noreferrer">Chong Feng</a>',
+
+      title_en:
+        'Resolving Perceptual Aliasing: Dual-Perspective Alignment Network for Text-to-Image Geo-Localization',
+
+      title_zh:
+        '消解感知混叠：面向文本到图像地理定位的双视角对齐网络',
+
+      venue:
+        'ACM Multimedia 2026 (CCF A)',
+    },
+
+    {
+      authors:
         'Yan Zhuang, Bo Wang, Chengliang Yin, Junyan Zhang, Fanqing Meng, Jianfei Zhao, Qingyong Su, Xuan Zhao, Xiuxing Li, Ping Hu, Shiyuan Liu, Rilige Wu, Yun Hua, Wei Dong, Bing Wei, Lei Zheng, João Conde, Ge Shi*, Chong Feng*, Kunlun He*',
 
       title_en:
@@ -802,6 +816,22 @@
    */
 
   const TIMELINE = [
+
+    {
+      date: 'Jul 2026',
+
+      title_en:
+        'ACM Multimedia 2026 Paper Accepted',
+
+      title_zh:
+        'ACM Multimedia 2026 论文录用',
+
+      desc_en:
+        'The paper "Resolving Perceptual Aliasing: Dual-Perspective Alignment Network for Text-to-Image Geo-Localization" was accepted by ACM Multimedia 2026.',
+
+      desc_zh:
+        '论文“Resolving Perceptual Aliasing: Dual-Perspective Alignment Network for Text-to-Image Geo-Localization”被 ACM Multimedia 2026 录用。',
+    },
 
     {
       date: 'May 2026',
