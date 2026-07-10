@@ -208,7 +208,7 @@
 
     {
       authors:
-        '<a class="pub-author-link" href="https://openreview.net/profile?id=~Changsen_Yuan1" target="_blank" rel="noopener noreferrer">Changsen Yuan</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yueying_Liu4" target="_blank" rel="noopener noreferrer">Yueying Liu</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Ge_Shi4" target="_blank" rel="noopener noreferrer">Ge Shi</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yanghao_Zhou2" target="_blank" rel="noopener noreferrer">Yanghao Zhou</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Chong_Feng1" target="_blank" rel="noopener noreferrer">Chong Feng</a>',
+        '<a class="pub-author-link" href="https://openreview.net/profile?id=~Changsen_Yuan1" target="_blank" rel="noopener noreferrer">Changsen Yuan</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yueying_Liu4" target="_blank" rel="noopener noreferrer">Yueying Liu</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Ge_Shi4" target="_blank" rel="noopener noreferrer">Ge Shi*</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Yanghao_Zhou2" target="_blank" rel="noopener noreferrer">Yanghao Zhou</a>, <a class="pub-author-link" href="https://openreview.net/profile?id=~Chong_Feng1" target="_blank" rel="noopener noreferrer">Chong Feng</a>',
 
       title_en:
         'Resolving Perceptual Aliasing: Dual-Perspective Alignment Network for Text-to-Image Geo-Localization',
