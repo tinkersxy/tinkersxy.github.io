@@ -1328,15 +1328,19 @@
      * nav
      */
 
-    const navLinks =
-      document.querySelectorAll('.nav-links a');
+    const navLabels = {
+      '#intro': t.nav.home,
+      '#timeline': t.nav.news,
+      '#publications': t.nav.publications,
+      '#group': t.nav.group,
+      '#grants': t.nav.grants,
+      '#recruitment': t.nav.recruitment,
+    };
 
-    navLinks[0].textContent = t.nav.home;
-    navLinks[1].textContent = t.nav.recruitment;
-    navLinks[2].textContent = t.nav.news;
-    navLinks[3].textContent = t.nav.publications;
-    navLinks[4].textContent = t.nav.group;
-    navLinks[5].textContent = t.nav.grants;
+    Object.entries(navLabels).forEach(([href, label]) => {
+      const link = qs(`.nav-links a[href="${href}"]`);
+      if (link) link.textContent = label;
+    });
 
     /*
      * hero
