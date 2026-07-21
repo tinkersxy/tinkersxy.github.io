@@ -15,6 +15,7 @@
 
       nav: {
         home: 'Home',
+        recruitment: 'Join Us',
         news: 'News',
         publications: 'Publications',
         group: 'Group',
@@ -55,6 +56,59 @@
         alumni: 'Alumni',
       },
 
+      recruitment: {
+        badge: '2026 Admissions',
+        status: 'Applications open',
+        eyebrow: 'Build trustworthy AI with us',
+        title: 'Join TrustLLM Group',
+        lead:
+          'We welcome motivated students who are excited about trustworthy LLM reasoning and real-world applications.',
+        positions: [
+          {
+            count: '2–3',
+            label: 'positions',
+            title: 'Recommended Admission (Master’s)',
+            audience: 'BIT students',
+            desc:
+              'For current Beijing Institute of Technology undergraduates who are eligible for recommended graduate admission.',
+          },
+          {
+            count: '1',
+            label: 'position',
+            title: 'Ph.D. Student',
+            audience: 'Open to all universities',
+            desc:
+              'Both direct Ph.D. and regular Ph.D. routes are welcome; candidates from BIT and other universities may apply.',
+          },
+        ],
+        fit_title: 'Who will thrive here',
+        fit_intro:
+          'We value long-term potential and the way you approach research more than a polished résumé.',
+        qualities: [
+          {
+            title: 'Think independently',
+            desc:
+              'Stay curious, frame meaningful questions, and form your own reasoned judgments.',
+          },
+          {
+            title: 'Act with initiative',
+            desc:
+              'Learn continuously and turn ideas into testable, reproducible work without waiting to be pushed.',
+          },
+          {
+            title: 'Grow together',
+            desc:
+              'Communicate openly, follow through reliably, and collaborate generously with the team.',
+          },
+        ],
+        note:
+          'Publications and prior research projects are a plus, not a prerequisite. Genuine interest, sustained effort, and a willingness to grow matter more.',
+        closing:
+          'Interested students are warmly invited to contact Prof. Ge Shi. Please briefly introduce your background, research interests, and representative projects or achievements.',
+        research_link: 'Explore our research',
+        pi_link: 'Meet the PI',
+      },
+
       footer:
         '© 2026 TrustLLM Group. All Rights Reserved.',
     },
@@ -63,6 +117,7 @@
 
       nav: {
         home: '首页',
+        recruitment: '招生',
         news: '新闻',
         publications: '论文',
         group: '成员',
@@ -101,6 +156,59 @@
         ms: '硕士生',
         visiting: '访问学生',
         alumni: '毕业生',
+      },
+
+      recruitment: {
+        badge: '2026 年招生计划',
+        status: '名额开放中',
+        eyebrow: '一起探索可信智能',
+        title: '加入 TrustLLM Group',
+        lead:
+          '我们期待与对可信大模型推理及真实场景应用有热情的同学共同成长。',
+        positions: [
+          {
+            count: '2–3',
+            label: '名',
+            title: '推免硕士研究生',
+            audience: '面向本校学生',
+            desc:
+              '现有 2–3 个本校推免名额，欢迎符合推免条件的北京理工大学本科生联系。',
+          },
+          {
+            count: '1',
+            label: '名',
+            title: '博士研究生',
+            audience: '校内外开放',
+            desc:
+              '可申请直博或普通博士，面向校内、校外优秀同学开放。',
+          },
+        ],
+        fit_title: '我们期待这样的你',
+        fit_intro:
+          '我们更看重长期潜力与做事方式，而不只看一份已经“完成”的履历。',
+        qualities: [
+          {
+            title: '主动思考',
+            desc:
+              '对研究问题保持好奇，愿意发现问题、提出判断，而不是只等待任务。',
+          },
+          {
+            title: '自我驱动',
+            desc:
+              '能够持续学习、主动推进，把想法逐步落实为可验证、可复现的工作。',
+          },
+          {
+            title: '可靠协作',
+            desc:
+              '沟通坦诚、做事有交付，在独立探索的同时愿意与团队共同成长。',
+          },
+        ],
+        note:
+          '已有论文或科研项目经历是加分项，但不是必要条件；真正的兴趣、持续投入和成长意愿更重要。',
+        closing:
+          '欢迎有意向的同学主动联系石戈老师。来信可简要介绍个人背景、研究兴趣，以及最能代表自己的项目或成果。',
+        research_link: '了解研究方向',
+        pi_link: '查看负责人',
       },
 
       footer:
@@ -1160,10 +1268,11 @@
       document.querySelectorAll('.nav-links a');
 
     navLinks[0].textContent = t.nav.home;
-    navLinks[1].textContent = t.nav.news;
-    navLinks[2].textContent = t.nav.publications;
-    navLinks[3].textContent = t.nav.group;
-    navLinks[4].textContent = t.nav.grants;
+    navLinks[1].textContent = t.nav.recruitment;
+    navLinks[2].textContent = t.nav.news;
+    navLinks[3].textContent = t.nav.publications;
+    navLinks[4].textContent = t.nav.group;
+    navLinks[5].textContent = t.nav.grants;
 
     /*
      * hero
@@ -1218,6 +1327,155 @@
 
     qs('footer').textContent =
       t.footer;
+
+  }
+
+  /*
+   * =========================================================
+   * RECRUITMENT
+   * =========================================================
+   */
+
+  function initRecruitment() {
+
+    const data =
+      LANG_TEXT[currentLang].recruitment;
+
+    const container =
+      qs('.recruitment-card');
+
+    if (!container || !data) return;
+
+    container.innerHTML = `
+
+      <div class="recruitment-glow" aria-hidden="true"></div>
+
+      <div class="recruitment-topline">
+
+        <span class="recruitment-badge">
+          <i class="fas fa-bullhorn" aria-hidden="true"></i>
+          ${data.badge}
+        </span>
+
+        <span class="recruitment-status">
+          <span class="recruitment-status-dot" aria-hidden="true"></span>
+          ${data.status}
+        </span>
+
+      </div>
+
+      <div class="recruitment-heading">
+
+        <div>
+
+          <p class="recruitment-eyebrow">
+            ${data.eyebrow}
+          </p>
+
+          <h2 id="recruitment-title">
+            ${data.title}
+          </h2>
+
+          <p class="recruitment-lead">
+            ${data.lead}
+          </p>
+
+        </div>
+
+        <a class="recruitment-primary-link" href="#advisor">
+          ${data.pi_link}
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+
+      </div>
+
+      <div class="recruitment-positions">
+
+        ${data.positions.map((position, index) => `
+
+          <article class="recruitment-position">
+
+            <div class="recruitment-position-icon" aria-hidden="true">
+              <i class="fas ${index === 0 ? 'fa-user-graduate' : 'fa-microscope'}"></i>
+            </div>
+
+            <div class="recruitment-position-content">
+
+              <div class="recruitment-position-meta">
+                <span class="recruitment-count">
+                  ${position.count}
+                  <small>${position.label}</small>
+                </span>
+                <span class="recruitment-audience">
+                  ${position.audience}
+                </span>
+              </div>
+
+              <h3>${position.title}</h3>
+
+              <p>${position.desc}</p>
+
+            </div>
+
+          </article>
+
+        `).join('')}
+
+      </div>
+
+      <div class="recruitment-fit">
+
+        <div class="recruitment-fit-heading">
+
+          <h3>${data.fit_title}</h3>
+
+          <p>${data.fit_intro}</p>
+
+        </div>
+
+        <div class="recruitment-quality-grid">
+
+          ${data.qualities.map((quality, index) => `
+
+            <div class="recruitment-quality">
+
+              <span class="recruitment-quality-index">
+                0${index + 1}
+              </span>
+
+              <div>
+
+                <h4>${quality.title}</h4>
+
+                <p>${quality.desc}</p>
+
+              </div>
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <p class="recruitment-note">
+          <i class="fas fa-seedling" aria-hidden="true"></i>
+          ${data.note}
+        </p>
+
+      </div>
+
+      <div class="recruitment-footer">
+
+        <p>${data.closing}</p>
+
+        <a href="#research">
+          ${data.research_link}
+          <i class="fas fa-arrow-down" aria-hidden="true"></i>
+        </a>
+
+      </div>
+
+    `;
 
   }
 
@@ -1674,6 +1932,8 @@
     initLanguageToggle();
 
     initStaticText();
+
+    initRecruitment();
 
     initHeroCollage();
 
