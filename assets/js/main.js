@@ -15,6 +15,7 @@
 
       nav: {
         home: 'Home',
+        recruitment: 'Join Us',
         news: 'News',
         publications: 'Publications',
         group: 'Group',
@@ -55,6 +56,91 @@
         alumni: 'Alumni',
       },
 
+      recruitment: {
+        badge: '2026 Admissions',
+        status: 'Applications open',
+        eyebrow: 'Build trustworthy AI with us',
+        title: 'Join TrustLLM Group',
+        lead:
+          'We welcome motivated students who are excited about trustworthy LLM reasoning and real-world applications.',
+        positions: [
+          {
+            count: '2–3',
+            label: 'positions',
+            title: 'Recommended Admission (Master’s)',
+            audience: 'BIT students',
+            desc:
+              'For current Beijing Institute of Technology undergraduates who are eligible for recommended graduate admission.',
+          },
+          {
+            count: '1',
+            label: 'position',
+            title: 'Ph.D. Student',
+            audience: 'Open to all universities',
+            desc:
+              'Both direct Ph.D. and regular Ph.D. routes are welcome; candidates from BIT and other universities may apply.',
+          },
+        ],
+        support_title: 'What the group provides',
+        supports: [
+          {
+            icon: 'fa-server',
+            title: 'Strong computing support',
+            desc:
+              'Multiple 8-GPU A100/A800 servers, together with funded AutoDL and Qudong Cloud resources, support research and experimentation.',
+          },
+          {
+            icon: 'fa-building',
+            title: 'Industry opportunities',
+            desc:
+              'We support and recommend internships at leading technology companies. Group members have joined talent programs at ByteDance, JD.com, and Baidu.',
+          },
+          {
+            icon: 'fa-earth-americas',
+            title: 'International exchange',
+            desc:
+              'Outstanding students may be recommended for academic visits to universities such as UC Berkeley, the University of Auckland, KCL, and the University of Oxford, subject to available opportunities and institutional policies.',
+          },
+        ],
+        fit_title: 'Who will thrive here',
+        fit_intro:
+          'We value long-term potential and the way you approach research more than a polished résumé.',
+        mentoring_note:
+          'We emphasize regular discussion, timely feedback, and learning through collaboration. Students are encouraged to gradually develop their own research judgment with active guidance and support.',
+        qualities: [
+          {
+            title: 'Think proactively',
+            desc:
+              'Stay curious, identify worthwhile questions, and contribute your own reasoned ideas during discussion.',
+          },
+          {
+            title: 'Keep learning',
+            desc:
+              'Learn with persistence and turn ideas into testable, reproducible work through discussion and mentoring.',
+          },
+          {
+            title: 'Work reliably',
+            desc:
+              'Communicate openly, follow through on commitments, and grow together with the team.',
+          },
+        ],
+        requirements_title: 'Expected foundations',
+        requirements: [
+          'Practical Python programming experience and hands-on use of PyTorch or a similar deep-learning framework, with a willingness to understand, modify, and validate code.',
+          'Foundations in machine learning and mathematics, including linear algebra and probability, plus the ability to read research papers in English.',
+        ],
+        note:
+          'Publications and prior research projects are a plus, not a prerequisite. Genuine interest, sustained effort, and a willingness to grow matter more.',
+        application_title: 'How to apply',
+        application_intro:
+          'Please send your CV to tinkersxy@gmail.com.',
+        application_hint:
+          'A short note about your research interests and representative projects or achievements is welcome.',
+        email: 'tinkersxy@gmail.com',
+        apply_link: 'Send application',
+        research_link: 'Explore our research',
+      },
+
       footer:
         '© 2026 TrustLLM Group. All Rights Reserved.',
     },
@@ -63,6 +149,7 @@
 
       nav: {
         home: '首页',
+        recruitment: '招生',
         news: '新闻',
         publications: '论文',
         group: '成员',
@@ -101,6 +188,91 @@
         ms: '硕士生',
         visiting: '访问学生',
         alumni: '毕业生',
+      },
+
+      recruitment: {
+        badge: '2026 年招生计划',
+        status: '名额开放中',
+        eyebrow: '一起探索可信智能',
+        title: '加入 TrustLLM Group',
+        lead:
+          '我们期待与对可信大模型推理及真实场景应用有热情的同学共同成长。',
+        positions: [
+          {
+            count: '2–3',
+            label: '名',
+            title: '推免硕士研究生',
+            audience: '面向本校学生',
+            desc:
+              '现有 2–3 个本校推免名额，欢迎符合推免条件的北京理工大学本科生联系。',
+          },
+          {
+            count: '1',
+            label: '名',
+            title: '博士研究生',
+            audience: '校内外开放',
+            desc:
+              '可申请直博或普通博士，面向校内、校外优秀同学开放。',
+          },
+        ],
+        support_title: '课题组支持',
+        supports: [
+          {
+            icon: 'fa-server',
+            title: '充足算力',
+            desc:
+              '配备多台 8 卡 A100、A800 服务器，并提供 AutoDL、趋动云等云平台资源，保障科研实验所需。',
+          },
+          {
+            icon: 'fa-building',
+            title: '实习机会',
+            desc:
+              '支持并推荐同学赴互联网大厂实习，近年已有多名同学入选字节、京东、百度等企业的人才计划。',
+          },
+          {
+            icon: 'fa-earth-asia',
+            title: '国际交流',
+            desc:
+              '根据合作机会与个人发展择优推荐海外高校交流访问，包括 UC Berkeley、University of Auckland、KCL、University of Oxford 等，以实际机会和学校政策为准。',
+          },
+        ],
+        fit_title: '我们期待这样的你',
+        fit_intro:
+          '我们更看重长期潜力与做事方式，而不只看一份已经“完成”的履历。',
+        mentoring_note:
+          '课题组重视充分讨论、及时反馈与共同成长。我们希望同学在积极指导和支持下，逐步形成自己的研究判断。',
+        qualities: [
+          {
+            title: '主动思考',
+            desc:
+              '对研究问题保持好奇，愿意发现值得研究的问题，并在讨论中提出有依据的想法。',
+          },
+          {
+            title: '持续学习',
+            desc:
+              '愿意踏实学习，在充分沟通和指导下，把想法逐步落实为可验证、可复现的工作。',
+          },
+          {
+            title: '可靠协作',
+            desc:
+              '沟通坦诚、认真负责，能够与团队成员相互支持、共同成长。',
+          },
+        ],
+        requirements_title: '基础能力',
+        requirements: [
+          '具备 Python 编程能力，有 PyTorch 或同类深度学习框架的实际使用经验，愿意理解、修改和验证代码。',
+          '具备机器学习与数学基础（如线性代数、概率统计），能够阅读英文论文。',
+        ],
+        note:
+          '已有论文或科研项目经历是加分项，但不是必要条件；真正的兴趣、持续投入和成长意愿更重要。',
+        application_title: '申请方式',
+        application_intro:
+          '请将个人简历发送至 tinkersxy@gmail.com。',
+        application_hint:
+          '建议在邮件中简要介绍个人背景、研究兴趣，以及最能代表自己的项目或成果。',
+        email: 'tinkersxy@gmail.com',
+        apply_link: '发送申请材料',
+        research_link: '了解研究方向',
       },
 
       footer:
@@ -1160,10 +1332,11 @@
       document.querySelectorAll('.nav-links a');
 
     navLinks[0].textContent = t.nav.home;
-    navLinks[1].textContent = t.nav.news;
-    navLinks[2].textContent = t.nav.publications;
-    navLinks[3].textContent = t.nav.group;
-    navLinks[4].textContent = t.nav.grants;
+    navLinks[1].textContent = t.nav.recruitment;
+    navLinks[2].textContent = t.nav.news;
+    navLinks[3].textContent = t.nav.publications;
+    navLinks[4].textContent = t.nav.group;
+    navLinks[5].textContent = t.nav.grants;
 
     /*
      * hero
@@ -1218,6 +1391,222 @@
 
     qs('footer').textContent =
       t.footer;
+
+  }
+
+  /*
+   * =========================================================
+   * RECRUITMENT
+   * =========================================================
+   */
+
+  function initRecruitment() {
+
+    const data =
+      LANG_TEXT[currentLang].recruitment;
+
+    const container =
+      qs('.recruitment-card');
+
+    if (!container || !data) return;
+
+    container.innerHTML = `
+
+      <div class="recruitment-glow" aria-hidden="true"></div>
+
+      <div class="recruitment-topline">
+
+        <span class="recruitment-badge">
+          <i class="fas fa-bullhorn" aria-hidden="true"></i>
+          ${data.badge}
+        </span>
+
+        <span class="recruitment-status">
+          <span class="recruitment-status-dot" aria-hidden="true"></span>
+          ${data.status}
+        </span>
+
+      </div>
+
+      <div class="recruitment-heading">
+
+        <div>
+
+          <p class="recruitment-eyebrow">
+            ${data.eyebrow}
+          </p>
+
+          <h2 id="recruitment-title">
+            ${data.title}
+          </h2>
+
+          <p class="recruitment-lead">
+            ${data.lead}
+          </p>
+
+        </div>
+
+        <a class="recruitment-primary-link" href="mailto:${data.email}">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          ${data.apply_link}
+        </a>
+
+      </div>
+
+      <div class="recruitment-positions">
+
+        ${data.positions.map((position, index) => `
+
+          <article class="recruitment-position">
+
+            <div class="recruitment-position-icon" aria-hidden="true">
+              <i class="fas ${index === 0 ? 'fa-user-graduate' : 'fa-microscope'}"></i>
+            </div>
+
+            <div class="recruitment-position-content">
+
+              <div class="recruitment-position-meta">
+                <span class="recruitment-count">
+                  ${position.count}
+                  <small>${position.label}</small>
+                </span>
+                <span class="recruitment-audience">
+                  ${position.audience}
+                </span>
+              </div>
+
+              <h3>${position.title}</h3>
+
+              <p>${position.desc}</p>
+
+            </div>
+
+          </article>
+
+        `).join('')}
+
+      </div>
+
+      <div class="recruitment-support">
+
+        <div class="recruitment-subheading">
+          <h3>${data.support_title}</h3>
+        </div>
+
+        <div class="recruitment-support-grid">
+
+          ${data.supports.map(item => `
+
+            <div class="recruitment-support-item">
+
+              <span class="recruitment-support-icon" aria-hidden="true">
+                <i class="fas ${item.icon}"></i>
+              </span>
+
+              <h4>${item.title}</h4>
+
+              <p>${item.desc}</p>
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+      </div>
+
+      <div class="recruitment-fit">
+
+        <div class="recruitment-fit-heading">
+
+          <h3>${data.fit_title}</h3>
+
+          <p>${data.fit_intro}</p>
+
+        </div>
+
+        <p class="recruitment-mentoring">
+          <i class="fas fa-comments" aria-hidden="true"></i>
+          ${data.mentoring_note}
+        </p>
+
+        <div class="recruitment-quality-grid">
+
+          ${data.qualities.map((quality, index) => `
+
+            <div class="recruitment-quality">
+
+              <span class="recruitment-quality-index">
+                0${index + 1}
+              </span>
+
+              <div>
+
+                <h4>${quality.title}</h4>
+
+                <p>${quality.desc}</p>
+
+              </div>
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <div class="recruitment-requirements">
+
+          <h4>${data.requirements_title}</h4>
+
+          <ul>
+
+            ${data.requirements.map(item => `
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i>
+                <span>${item}</span>
+              </li>
+            `).join('')}
+
+          </ul>
+
+        </div>
+
+        <p class="recruitment-note">
+          <i class="fas fa-seedling" aria-hidden="true"></i>
+          ${data.note}
+        </p>
+
+      </div>
+
+      <div class="recruitment-footer">
+
+        <div>
+
+          <h3>${data.application_title}</h3>
+
+          <p>${data.application_intro}</p>
+
+          <small>${data.application_hint}</small>
+
+        </div>
+
+        <div class="recruitment-footer-actions">
+
+          <a class="recruitment-email" href="mailto:${data.email}">
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            <span>${data.email}</span>
+          </a>
+
+          <a class="recruitment-research-link" href="#research">
+            ${data.research_link}
+            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    `;
 
   }
 
@@ -1674,6 +2063,8 @@
     initLanguageToggle();
 
     initStaticText();
+
+    initRecruitment();
 
     initHeroCollage();
 
